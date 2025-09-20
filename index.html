@@ -1,25 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-LucasPompilio</title>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <h1>Portfolio</h1>
-    <h2>Lucas Pompilio</h2>
-    <p>parrafo texto de purueba para el portfolio</p> 
+  <header>
+    <h1>LUCAS POMPILIO - Mi Portfolio</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#educacion">Educación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
+  <!-- Sobre mí -->
+  <section id="sobre-mi">
+    <div class="contenedor-sobre-mi">
+      <div class="columna-foto">
+        <img src="fotopersonal.jpg" alt="Foto personal" class="foto-personal">
+      </div>
+      <div class="columna-texto">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Lucas! Desde siempre me interesó la programación y fue esa curiosidad la que me llevó a comenzar mis estudios en la UTN.</p>
+        <p>Mi idea es aplicar lo aprendido en proyectos personales y seguir creciendo, con el objetivo de especializarme en la parte lógica de la programación, que es lo que más disfruto.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <div class="cuadrado">
+      <h2>Proyectos</h2>
+      <h4>- Formulario de Gestión de Artículos</h4>
+      <p>Este proyecto es una aplicación de gestión de artículos de un catálogo que desarrollé. Permite agregar, modificar y eliminar productos.</p>
+      <p><strong>Tecnologías:</strong> C# - SQL.</p>
+      <a href="https://github.com/lucascastrodev/tp-winform-equipo-20B" target="_blank" class="boton-proyecto">Ver en GitHub</a>
+    </div>
+    <div class="cuadrado derecha">
+      <h2>Conocimientos</h2>
+<div class="botones-conocimientos">
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/csharp.svg" alt="C#" width="50" height="50">
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cplusplus.svg" alt="C++" width="50" height="50">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg" alt="Python" width="50" style="fill:#3776AB;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS" width="50" style="fill:#1572B6;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JS" width="50" style="fill:#F7DF1E;">
+</div>
+    </div>
+  </section>
 
+  <!-- Educación -->
+  <section id="educacion">
+    <h2>Educación</h2>
+    <div class="contenedor-educacion">
+      <div class="columna-educacion">
+        <h3>Técnico Electromecánico</h3>
+        <p>Escuela Técnica Don Bosco</p>
+      </div>
+      <div class="columna-educacion">
+        <h3>Estudiante de Tecnicatura Universitaria en Programación</h3>
+        <p>Universidad Tecnológica Nacional</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contacto -->
+  <section id="contacto">
+    <div class="contenedor-contacto">
+      <div class="columna-formulario">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="columna-info">
+        <h2>Mis datos</h2>
+        <p><strong>Email:</strong> <a href="mailto:pompilioalucas@gmail.com">pompilioalucas@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+        <p><strong>Ubicación:</strong> C.A.B.A., Argentina</p>
+        <p><strong>Redes:</strong></p>
+        <div class="botones-redes">
+          <a href="#" class="boton-red" title="Instagram">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="30">
+          </a>
+          <a href="#" class="boton-red" title="LinkedIn">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30">
+          </a>
+          <a href="https://github.com/tu_usuario" target="_blank" class="boton-red" title="GitHub">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 - Mi Portfolio</p>
+  </footer>
 
-
-
-
-
-
-  </body>
+</body>
 </html>
